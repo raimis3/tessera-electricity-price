@@ -46,7 +46,6 @@ tiles:
           - { value: cents, label: unit_cents }
       - { id: fixed, kind: number, min: 0, max: 4, step: 1, default: 3, label: decimals, hint: decimals_hint }
       - { id: delivery, kind: text, default: "", label: delivery, hint: delivery_hint }
-      - { id: feed_in, kind: text, default: "", label: feed_in, hint: feed_in_hint }
       - id: graph
         kind: choice
         default: bars
@@ -65,8 +64,6 @@ tiles:
           - { value: none, label: grid_none }
           - { value: solid, label: grid_solid }
           - { value: dotted, label: grid_dotted }
-      - { id: ahead, kind: toggle, default: false, label: ahead, hint: ahead_hint }
-      - { id: start, kind: number, optional: true, min: 0, max: 23, step: 1, label: start, hint: start_hint }
       - id: resolution
         kind: choice
         default: quarter
